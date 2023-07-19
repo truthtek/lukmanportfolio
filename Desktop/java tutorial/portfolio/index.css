@@ -1,0 +1,615 @@
+/* index.css */
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.head {
+    color: #cccccc;
+    float: left;
+    padding-left: 150px;
+    padding-top: 5px;
+}
+
+.head span {
+    color: #00bfff;
+}
+
+.navba {
+    color: #cccccc;
+    float: right;
+    display: inline;
+    padding-top: 0;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+}
+
+.navba li {
+    display: inline;
+    margin:0 1px;
+    padding-right: 50px;
+    margin: 3px;
+}
+
+.navba a {
+    text-decoration: none;
+    margin: 1px;
+    color: #cccccc;
+}
+
+#navbarIcon{
+    position: fixed;
+    color: #3498db;
+  }
+  
+  .navbar {
+    position: relative;
+  }
+  
+  .navbar-nav {
+    z-index: 1;
+  }
+  
+  .navbar-nav::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, transparent, white 50%);
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .navbar-nav:hover::after {
+    opacity: 5;
+  }
+  
+main {
+    color: #cccccc;
+    padding-top: 25%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+main span {
+    color: #00bfff;
+    padding-top: 50%;
+}
+
+main h1 {
+    font-size: 2.4rem;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.buttons:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    transition: 1.0s ease-in-out;
+}
+
+.cv {
+    border-radius: 50px;
+    margin-right: 20px;
+    font-size: 16px;
+    background-color: #00bfff;
+    padding: 0 25px;
+    height: 30px;
+    color: black;
+}
+
+.cm {
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 0 25px;
+    height: 30px;
+    background-color: #cccccc;
+    color: white;
+}
+
+.form {
+    color: #cccccc;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.lab {
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: rgb(18, 19, 24);
+    margin: 0 15%;
+}
+
+#name,
+#email,
+#message {
+    width: 400px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+    border-radius: 10px;
+}
+
+#submit{
+    background-color: rgb(18, 19, 24);
+    width: 400px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+    border-radius: 10px;
+}
+
+.link {
+    color: #cccccc;
+    text-align: center;
+    padding-top: 17%;
+    position: relative;
+}
+
+.link a {
+    margin: 10px;
+}
+
+#about-me {
+    color: #ffffff;
+    margin: 0 20px;
+}
+
+#about-me h1 {
+    font-size: 30px;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    margin-left: 20%;
+    color: #cccccc;
+}
+
+.me {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.img img {
+    width: 200px;
+    border-radius: 50%;
+    justify-content: center;
+    border: 1px solid #05010d;
+}
+
+.about {
+    margin-left: 20px;
+}
+
+.about h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #cccccc;
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #00bfff;
+}
+
+.about p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #cccccc;
+}
+
+#skills {
+    color: #ffffff;
+    margin: 0 20px; 
+}
+
+#skills h2 {
+    font-size: 30px;
+    padding-top: 10%;
+    text-decoration: underline;
+    padding-bottom: 3%;
+    margin-left: 20%; 
+    color: #cccccc;     
+}
+
+.skill {
+    display: flex;
+    border: 40px solid rgb(18, 19, 24) ;
+    background-color: rgb(18, 19, 24);
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+
+.skill img {
+    margin: 2%;
+    padding-right: 3%;
+}
+
+.skill:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    transition: 1.0s ease-in-out;
+}
+
+#certification h3 {
+    margin-left: 20%;
+    margin-bottom: 3%;
+    color: #cccccc;
+    padding-top: 10%;
+}
+
+.certificate {
+    margin-bottom: 3%;
+    padding: 0 20%;
+    
+}
+
+#Portfolio h3 {
+    font-size: 30px;
+    padding-top: 10%;
+    text-decoration: underline;
+    padding-bottom: 3%;
+    margin-left: 20%; 
+    color: #cccccc;
+}
+
+.Portfolio {
+    margin-bottom: 3%;
+    padding: 0 20%;
+    cursor: pointer;
+    position: relative;
+    }
+
+.grid-container .grid-item {
+    display: flex;
+    align-items: flex-start;
+    border: 30px solid rgb(18, 19, 24);
+    margin-bottom: 5%;
+    padding-right: 20%;
+    background-color: rgb(18, 19, 24);
+}
+
+.grid-container .grid-item img {
+    margin-right: 10px;
+    
+}
+
+.Portfolio:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    transition: 1.0s ease-in-out;
+}
+.container .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+ .cont h4 {
+    color: #cccccc;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    margin-bottom: 2%;
+    
+}
+.cont p {
+    color: #cccccc;
+    max-width: fit-content;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-bottom: 5%;
+    
+}
+
+ .cont a {
+    color: #00bfff;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    padding-bottom: 0;
+    display: inline;
+    text-decoration: none;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+#contact-me {
+    color: #cccccc;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 3px;
+    
+    
+}
+#contact-me h2 {
+    margin-left: -50%;
+    margin-bottom: 3%;
+    color: #cccccc;
+    
+}
+
+.content {
+    color: #cccccc;
+    margin:0 20%;
+    padding-top: 0;
+    background: rgb(18, 19, 24);
+    border: 30px solid rgb(18, 19, 24);
+    border-radius: 10px;
+    box-shadow: -3px -3px 5px #ffffff73,
+                 2px 2px 4px rgb(18, 19, 24);
+    
+  }
+  
+  .content .text {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 35px;
+    color: #cccccc;
+  }
+  
+  .field {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .field .input {
+    height: 100%;
+    width: 100%;
+    padding-left: 45px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: #dde1e7;
+    color: #595959;
+    border-radius: 25px;
+    box-shadow: inset 2px 2px 5px #BABECC,
+                inset -5px -5px 10px #ffffff73;
+  }
+  
+  .field .input:focus {
+    box-shadow: inset 1px 1px 2px #BABECC,
+                inset -1px -1px 2px #ffffff73;
+  }
+  
+  .field .span {
+    position: absolute;
+    color: #595959;
+    width: 50px;
+    line-height: 55px;
+  }
+  
+  .field .label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 45px;
+    pointer-events: none;
+    color: #666666;
+  }
+  
+  .field .input:valid ~ label {
+    opacity: 0;
+  }
+  
+  .forgot-pass {
+    text-align: left;
+    margin: 10px 0 10px 5px;
+  }
+  
+  .forgot-pass a {
+    font-size: 16px;
+    color: #666666;
+    text-decoration: none;
+  }
+  
+  .forgot-pass:hover a {
+    text-decoration: underline;
+  }
+  
+  .button {
+    margin: 15px 0;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 600;
+    background: #dde1e7;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #595959;
+    box-shadow: 2px 2px 5px #BABECC,
+               -5px -5px 10px #ffffff73;
+  }
+  
+  .button:focus {
+    color: #3498db;
+    box-shadow: inset 2px 2px 5px #BABECC,
+               inset -5px -5px 10px #ffffff73;
+  }
+  
+  .sign-up {
+    margin: 10px 0;
+    color: #595959;
+    font-size: 16px;
+  }
+  
+  .sign-up a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .sign-up a:hover {
+    text-decoration: underline;
+  }
+
+
+
+  @media only screen and (max-width: 480px) {  
+    * {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    } 
+    .head {
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .navba {
+        margin-right: 0;
+    }
+    main {
+        padding-top: 80%;
+        font-size: 16px;
+        font-family: cursive;
+        text-align: center;
+    }
+    main h1 {
+        font-size: 18px;
+    }
+    .cv {
+        font-size: 15px;
+    }
+
+    .cv {
+        font-size: 15px;
+    }
+
+    .link {
+        padding-top: 70%;
+    }
+
+    #about-me {
+        text-align: center;
+    }
+
+    #about-me h1 {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .me {
+        display:block;
+        margin-left: 0;
+    }
+
+    .about {
+        margin:20px 0;
+    }
+
+    #skills {
+        text-align: center;
+    }
+
+    #skills h2 {
+        margin-left: 0;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .skill {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+         
+    }
+
+    .skill img {
+        width: 100%;
+        height: auto;
+    }
+
+    #certification h3 {
+        font-size: 18px;
+        margin-top: 10%;
+        padding-top: 0;
+    }
+
+    .certificate {   
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 0;
+    }
+
+    .containerss {
+        position: relative;
+        width: 50%;
+        margin-top: 5%;
+      }
+      
+      .imagess {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: 50%;
+        
+      }
+      
+      .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: #008CBA;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        margin-left: 50%;
+      }
+      
+      .containerss:hover .overlay {
+        bottom: 0;
+        height: 100%;
+      }
+      
+      .textss {
+        white-space: nowrap; 
+        color: white;
+        font-size: 16px;
+        position: absolute;
+        overflow: hidden;
+        top: 12%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+  
+      .text h1 {
+          text-align: left;
+          font-size: 20px;
+      }
+      .text p {
+          text-align: center;
+          margin-top: 50%;
+          margin-left: 50px;
+          color: red;
+          text-overflow: clip;
+      }
+
+   
+
+
+
+
+    
+    
+  }
+  
