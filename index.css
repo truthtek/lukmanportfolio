@@ -5,15 +5,17 @@ header {
     width: 100%;
 }
 
-.head {
+.head a{
     color: #cccccc;
     float: left;
     padding-left: 150px;
     padding-top: 5px;
+    text-decoration: none;
 }
 
 .head span {
     color: #00bfff;
+    margin-left: 5px;
 }
 
 .navba {
@@ -275,23 +277,23 @@ main h1 {
 }
 
 .Portfolio {
-    margin-bottom: 3%;
-    padding: 0 20%;
+    padding-left: 20%;
+    padding-right: 20%;
     cursor: pointer;
     position: relative;
     }
 
-.grid-container .grid-item {
-    display: flex;
-    align-items: flex-start;
-    border: 30px solid rgb(18, 19, 24);
+.grid-container .grid-item { 
     margin-bottom: 5%;
-    padding-right: 20%;
     background-color: rgb(18, 19, 24);
+  
 }
 
-.grid-container .grid-item img {
-    margin-right: 10px;
+ .grid-item img {
+    margin-bottom: 10px;
+    width: 100%;
+    border: 30px solid rgb(18, 19, 24);
+    background-color: rgb(18, 19, 24);
     
 }
 
@@ -299,39 +301,28 @@ main h1 {
     transform: scaleX(1.1) scaleY(1.1);
     transition: 1.0s ease-in-out;
 }
-.container .cont {
+ .cont {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    text-align: center;
+    
+    
   }
 
- .cont h4 {
-    color: #cccccc;
-    font-family: cursive;
-    font-weight: bolder;
-    font-size: 1.6rem;
-    margin-bottom: 2%;
-    
-}
 .cont p {
     color: #cccccc;
-    max-width: fit-content;
-    font-weight: bolder;
-    font-size: 16px;
-    margin-bottom: 5%;
+    font-size: 12px;
+    margin-bottom: 3;
+    margin-top: -10px;
     
 }
 
  .cont a {
     color: #00bfff;
-    font-family: cursive;
-    font-weight: bolder;
-    font-size: 1.6rem;
-    padding-bottom: 0;
+    font-size: 12px;
     display: inline;
     text-decoration: none;
-    margin-top: 10px;
-    gap: 10px;
+    margin-bottom: 15px;
 }
 
 #contact-me {
@@ -476,7 +467,7 @@ main h1 {
         margin-left: 0;
         margin-right: 0;
     } 
-    .head {
+    .head a {
         padding-left: 0;
         padding-top: 0;
     }
@@ -549,10 +540,15 @@ main h1 {
         clear: both;
       }
 
+      #certificate {
+        padding-top: 10%;
+      }
+
     #certification h3 {
+        margin-left: 0;
         font-size: 18px;
-        margin-top: 10%;
-        padding-top: 0;
+        text-decoration: none;
+        text-align: center;
     }
 
     .certificate {   
@@ -561,62 +557,42 @@ main h1 {
         padding: 0;
     }
 
-    .containerss {
-        position: relative;
-        width: 50%;
-        margin-top: 5%;
-      }
-      
-      .imagess {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-left: 50%;
-        
-      }
-      
-      .overlay {
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        right: 0;
-        background-color: #008CBA;
-        overflow: hidden;
-        width: 100%;
-        height: 0;
-        transition: .5s ease;
-        margin-left: 50%;
-      }
-      
-      .containerss:hover .overlay {
-        bottom: 0;
-        height: 100%;
-      }
-      
-      .textss {
-        white-space: nowrap; 
-        color: white;
-        font-size: 16px;
-        position: absolute;
-        overflow: hidden;
-        top: 12%;
-        left: 20%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-      }
-  
-      .text h1 {
-          text-align: left;
-          font-size: 20px;
-      }
-      .text p {
-          text-align: center;
-          margin-top: 50%;
-          margin-left: 50px;
-          color: red;
-          text-overflow: clip;
-      }
+    #Portfolio {
+        text-align: center;
+    }
 
+    #Portfolio h3 {
+        margin-left: 0;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .Portfolio {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 0;
+    }
+
+
+    #contact-me h2 {
+        margin-left: 0;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .content {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 0;
+    }
+
+
+
+    
+
+
+
+    
    
 
 

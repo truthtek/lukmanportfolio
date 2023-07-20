@@ -22,7 +22,7 @@
 
     <header id="hea">
         <div class="head">
-            <h4>Lukman<span>A.</span></h4>
+            <a href="index.html"><h4> Lukman<span>A.</span></h4></a>
         </div>
         <nav class="navbar navbar-expand-lg navba">
             <div class="container-fluid">
@@ -50,7 +50,7 @@
         </div>
         <div class="buttons">
             <div class="cv">
-                <a href="#" style="text-decoration:none;">View Resume</a>
+                <a href="https://eu.docworkspace.com/d/sIMqVsvLRAeHX4KUG" style="text-decoration:none;">View Resume</a>
             </div>
             <div class="cm">
                 <a href="#contact-me" style="text-decoration: none;">Contact Me</a>
@@ -158,19 +158,16 @@
                 <div class="grid-container">
                     <div class="grid-item">                       
                         <img class="img" src="port.png" alt="portfolio">
-                        <div class="cont">
-                        <h4>Portfolio</h4>
+                        <div class="cont tex">
                         <p>Portfolio website built using Html5, Css bootstrap5 and javascript. Includes information about me and my skills along with side projects.</p>
                         <a href="#">live demo</a>
-                        <a href="#">source code</a>
                         </div>
                     </div>
                     <div class="grid-item">                
                         <img class="img" src="rest.png" alt="resturant">
-                        <div class="cont">
-                        <h4>Meta</h4>
+                        <div class="cont tex">
+                          <p> resturant build as part of my final project for john hopkins university course</p>
                         <a href="#">live demo</a>
-                        <a href="#">source code</a>
                         </div>
                     </div>
                 </div>            
@@ -182,7 +179,7 @@
             <h2><i class="fa fa-hand-o-down" style="font-size:36px"></i>Contact me</h2>
          </div>
     <div class="content">
-        <form action="#">
+        <form id="my-form" action="https://formspree.io/f/meqbokzn" method="post">
            <div class="field">
               <input required="" type="text" class="input">
               <span class="span"><svg class="" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 512 512" y="0" x="0" height="20" width="50" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg"><g><path class="" data-original="#000000" fill="#595959" d="M256 0c-74.439 0-135 60.561-135 135s60.561 135 135 135 135-60.561 135-135S330.439 0 256 0zM423.966 358.195C387.006 320.667 338.009 300 286 300h-60c-52.008 0-101.006 20.667-137.966 58.195C51.255 395.539 31 444.833 31 497c0 8.284 6.716 15 15 15h420c8.284 0 15-6.716 15-15 0-52.167-20.255-101.461-57.034-138.805z"></path></g></svg></span>
@@ -205,10 +202,45 @@
               OR
               <p>Directly contact me <a href="mailto:adedokunadebayolukman@gmail.com?subject=Hello&body=Dear%20recipient,">adedokunadebayolukman@gmail.com</a>
               </p>
+              <p id="my-form-status"></p>
            </div>
         </form>
      </div>
-    </section>  
+    </section> 
+    
+    <!-- Place this script at the end of the body tag -->
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              form.reset()
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
 
 </body>
 </html>
