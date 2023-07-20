@@ -588,6 +588,7 @@ main h1 {
 
     .sign-up p a {
         text-align: left;
+        margin: 0;
     }
   }
   
