@@ -450,7 +450,7 @@ main h1 {
     font-size: 16px;
   }
   
-  .sign-up a {
+  .sign-up p {
     color: #3498db;
     text-decoration: none;
   }
@@ -586,19 +586,8 @@ main h1 {
         padding: 0;
     }
 
-
-
-    
-
-
-
-    
-   
-
-
-
-
-    
-    
+    .sign-up p a {
+        text-align: left;
+    }
   }
   
