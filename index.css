@@ -119,36 +119,6 @@ main h1 {
     color: white;
 }
 
-.form {
-    color: #cccccc;
-    text-align: center;
-    padding-top: 20%;
-}
-
-.lab {
-    padding: 10px 0;
-    border-radius: 5px;
-    background-color: rgb(18, 19, 24);
-    margin: 0 15%;
-}
-
-#name,
-#email,
-#message {
-    width: 400px; /* Adjust the width as needed */
-    height: 40px; /* Adjust the height as needed */
-    font-size: 18px; /* Adjust the font size as needed */
-    border-radius: 10px;
-}
-
-#submit{
-    background-color: rgb(18, 19, 24);
-    width: 400px; /* Adjust the width as needed */
-    height: 40px; /* Adjust the height as needed */
-    font-size: 18px; /* Adjust the font size as needed */
-    border-radius: 10px;
-}
-
 .link {
     color: #cccccc;
     text-align: center;
@@ -461,7 +431,7 @@ main h1 {
 
 
 
-  @media only screen and (max-width: 480px) {  
+  @media only screen and (max-width: 520px) {  
     * {
         max-width: 100%;
         margin-left: 0;
@@ -590,4 +560,83 @@ main h1 {
         margin-left: 0;
     }
   }
+  
+
+  @media only screen and (min-width: 481px) and (max-width: 767px ) {  
+    
+    .head a {
+        padding-left: 0;
+        padding-top: 0;
+    
+    }
+
+    main {
+        padding-top: 40%;
+        padding-bottom: 20%;
+    }
+
+    .me {
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    #about-me {
+        text-align: center;
+    }
+
+    .about {
+        margin:20px 0;
+    }
+    #about-me h1 {
+        margin-left: -40%;
+    }
+  }
+
+  
+@media only screen and (min-width: 768px) and (max-width: 1024px ) { 
+    #hea {
+        font-size: 16px;
+        padding: 0;
+    }   
+    
+    .head a {
+            padding-left: 0;
+            padding-top: 0;
+        
+        }
+
+        .navba {
+            margin-right: 0;
+        }
+
+        .navba li {
+            padding-right: 0;
+            padding-top: 0;
+        }
+
+  main { 
+    padding-top: 35%;
+  }
+
+  .link{
+    padding-top: 25%;
+  }
+}
+
+  @media only screen and (min-width: 1025px) and (max-width: 1200px ) { 
+    .navba li {
+        padding-right: 0;
+    }
+
+    main {
+        padding-top: 30%;
+    }
+
+    .link {
+        padding-top: 30%;
+    }
+
+  
+}
+
   
