@@ -1,0 +1,87 @@
+body {
+    background-color: #05010d;
+}
+
+
+/* Apply styles for the header */
+#hea {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 5px 10px; 
+    
+    
+}
+.cta-buttons {
+    font-size: 28px;
+    font-family: cursive;   
+}
+
+.cta-buttons button {
+    background-color: blue;
+}
+
+/* Style the navigation bar */
+
+/* Style the navigation links */
+.navbar-nav {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav-item {
+    display: inline-block; 
+}
+
+.nav-link {
+    color: #333; 
+    text-decoration: none; 
+    padding: 5px 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0; /* Optional: Add a background color on hover */
+}
+
+.fade-in > div {
+    display: none; /* Hide all divs initially */
+    padding-top: 20%;
+    animation: fadeInAnimation 1s ease-in-out;
+}
+
+.fade-in > div.active {
+    display: block; /* Show the active div */
+}
+
+
+.certificate {
+    margin-bottom: 3%;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+
+.certificates {
+    background-color:#007D99;
+}
+
+.carousel-img {
+    opacity: 0;
+    animation: fadeInImage 7s ease-in-out;
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
