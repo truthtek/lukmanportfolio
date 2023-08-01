@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Digital Clock</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        color: #ffffff;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #212121;
+      }
+
+      .clock {
+        font-size: 48px;
+        border: 20px solid rgba(255, 255, 255, 0.25);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock" id="digital-clock">
+        <!-- The time will be displayed here -->
+      </div>
+    </div>
+
+    <script>
+      function displayTime() {
+        let date = new Date();
+
+        // Getting hour, mins, secs from date
+        let hh = date.getUTCHours() + 1; // Adjust for West Africa Time (WAT)
+        let mm = date.getUTCMinutes();
+        let ss = date.getUTCSeconds();
+
+        // Format the time to ensure leading zeros for single-digit values
+        let formattedHH = String(hh).padStart(2, '0');
+        let formattedMM = String(mm).padStart(2, '0');
+        let formattedSS = String(ss).padStart(2, '0');
+
+        // Concatenate the time components to form the digital clock display
+        let digitalTime = `${formattedHH}:${formattedMM}:${formattedSS}`;
+
+        // Update the digital clock display
+        document.getElementById('digital-clock').innerText = digitalTime;
+      }
+
+      // Call the displayTime() function once to avoid delay in initial rendering
+      displayTime();
+
+      // Set an interval to call the displayTime() function every second
+      setInterval(displayTime, 1000);
+    </script>
+  </body>
+</html>
