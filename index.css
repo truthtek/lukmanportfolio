@@ -114,6 +114,7 @@ main h1 {
     padding-bottom: 3%;
     margin-left: 20%;
     color: #cccccc;
+    
 }
 
 .me {
@@ -434,8 +435,10 @@ main h1 {
         top: 30%;
         left: 50%;
         transform: translate(-30%, -50%);
-        transition: ease-in 1Ss;
-        z-index: 10000;
+        transition: ease-in 3s;
+        z-index: 1;
+        background-color: #05010d;
+        width: 100%;
       }
     
       #navbarIcon {
