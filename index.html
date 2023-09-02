@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="index.js"></script>
     <title>Lukman Portfolio</title>
 </head>
 <body>
@@ -17,8 +15,10 @@
         body {
             background-color: #05010d;
         }
-
+        
     </style>
+
+   <div class="background-container"></div> 
     
 
     <header id="hea">
@@ -44,8 +44,8 @@
     
     <main>
         <div>
-            <h1> Hi, I am <span>Lukman Adedokun</span> </h1>
-            <p>"I'm a passionate web developer dedicated to continuous learning and innovations."</p>
+            <h1> Hi, I am <span id="jobTitle">Lukman Adedokun</span> </h1>
+            <p>"I'm a passionate <span id="skill"><em>web developer</em></span> dedicated to continuous learning and innovations."</p>
         </div>
         <div class="buttons">
             <div class="cv">
@@ -81,39 +81,39 @@
         </div>
     </section>
     <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skill">
-          <div>
-            <div class="left">
+      <h2>My Skills</h2>
+      <div class="skill-grid">
+          <div class="skill-item">
               <img src="html.png" alt="">
               <h6>Html</h6>
-            </div>
-            <div class="right">
+          </div>
+          <div class="skill-item">
               <img src="css.png" alt="">
               <h6>Css</h6>
-            </div>
-            <div class="left">
+          </div>
+          <div class="skill-item">
               <img src="js.png" alt="">
               <h6>Javascript</h6>
-            </div>
-            <div class="right">
+          </div>
+          <div class="skill-item">
               <img src="git.png" alt="">
               <h6>Git</h6>
-            </div>
-            <div class="left">
+          </div>
+          <div class="skill-item">
               <img src="py.jpeg" alt="">
               <h6>Python</h6>
-            </div>
-            <div class="right">
+          </div>
+          <div class="skill-item">
               <img src="react.png" alt="">
               <h6>React</h6>
-            </div>
-            <div class="left">
+          </div>
+          <div class="skill-item">
               <img src="node.png" alt="">
               <h6>Node js</h6>
-            </div>
-        </div>
+          </div>
       </div>
+  </section>
+  
     </section>
     <section id="certification">
         <h3><i class="fa fa-certificate" style="font-size:36px"></i>Certification</h3>
@@ -225,8 +225,9 @@
              <!-- Place this script at the end of the body tag -->
              
                 
-         
-            
+             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+             <script src="index.js"></script>
          </body>
          </html>
          

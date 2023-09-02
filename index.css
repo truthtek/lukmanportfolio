@@ -1,5 +1,6 @@
 /* index.css */
 
+
 header {
     position: fixed;
     width: 100%;
@@ -114,7 +115,6 @@ main h1 {
     padding-bottom: 3%;
     margin-left: 20%;
     color: #cccccc;
-    
 }
 
 .me {
@@ -167,7 +167,7 @@ main h1 {
     color: #cccccc;     
 }
 
-.skill {
+.skill-grid {
     text-align: center;
     border: 40px solid rgb(18, 19, 24) ;
     background-color: rgb(18, 19, 24);
@@ -176,24 +176,24 @@ main h1 {
     
 }
 
-.skill div {
+.skill-grid div {
     display: inline-block;
     text-align: center;
     margin: 15px;
 }
 
-.skill img {
+.skill-grid img {
     width: 100%;
     height: auto;
 }
 
-.skill h6 {
+.skill-grid h6 {
     font-family: cursive;
     margin-top: 5px;
     color: #00bfff;
 }
 
-.skill:hover {
+.skill-grid:hover {
     transform: scaleX(1.1) scaleY(1.1);
     transition: 1.0s ease-in-out;
 }
@@ -416,7 +416,7 @@ main h1 {
 
 
 
-  @media only screen and (max-width: 520px) {  
+  @media only screen and (max-width: 768px) {  
     
     .head a {
         padding-left: 0;
@@ -432,13 +432,11 @@ main h1 {
     
     #navbarMenu {
         position: fixed;
-        top: 30%;
+        top: 25%;
         left: 50%;
         transform: translate(-30%, -50%);
-        transition: ease-in 3s;
-        z-index: 1;
-        background-color: #05010d;
-        width: 100%;
+        transition: ease-in 1Ss;
+        z-index: 10000;
       }
     
       #navbarIcon {
@@ -517,28 +515,24 @@ main h1 {
     .about {
         margin:20px 0;
     }
-
-    #skills {
-        text-align: center;
+    
+    .left, .right {
+        width: 50%;
     }
-
-    #skills h2 {
-        margin-left: 0;
-        font-size: 18px;
-        text-decoration: none;
+    
+    .left {
+        text-align: left;
     }
-
-    .skill {
-        margin-left: 5%; /* Adjust margins to fit 3 divs in a row */
-        margin-right: 5%;
-        
-        
-      }
-
-    .skill div {
-        width: 45%;
-              
+    
+    .right {
+        text-align: right;
     }
+    .skill-grid {
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+    }
+    
+    
     
 
       #certificate {
@@ -593,35 +587,7 @@ main h1 {
     }
   
 
-  @media only screen and (min-width: 481px) and (max-width: 767px ) {  
-    
-    .head a {
-        padding-left: 0;
-        padding-top: 0;
-    
-    }
-
-    main {
-        padding-top: 40%;
-        padding-bottom: 20%;
-    }
-
-    .me {
-        display: inline-block;
-        margin-left: 0;
-    }
-
-    #about-me {
-        text-align: center;
-    }
-
-    .about {
-        margin:20px 0;
-    }
-    #about-me h1 {
-        margin-left: -40%;
-    }
-  }
+  
 
   
 @media only screen and (min-width: 768px) and (max-width: 1024px ) { 

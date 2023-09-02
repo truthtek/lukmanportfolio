@@ -45,4 +45,32 @@ document.addEventListener("DOMContentLoaded", function () {
                  }
          
                  form.addEventListener("submit", handleSubmit);
-                })                  
+                })
+
+
+
+
+                $(document).ready(function() {
+                  // Function to toggle between "Web Developer" and "Software Developer"
+                  function toggleJobTitle() {
+                      const jobTitleElement = $("#jobTitle");
+                      const skillElement = $("#skill");
+              
+                      // Check the current job title and toggle it
+                      if (skillElement.text() === "Web Developer") {
+                          skillElement.text("Software Developer");
+                          skillElement.text("Software developer");
+                      } else {
+                          skillElement.text("Web Developer");
+                          jobTitleElement.text("Lukman Adedokun");
+                      }
+                  }
+              
+                  // Set an interval to call the toggle function every 2 seconds
+                  setInterval(toggleJobTitle, 2000);
+              });
+
+              
+            
+                
+                // JavaScript function to toggle between "Web Developer" and "Software Developer"
